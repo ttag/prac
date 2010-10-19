@@ -33,6 +33,16 @@
   </p>
 
 
+  <% airports = Airport.find(:all, :order => :code) %>
+<p>Depart from:
+  <%= f.collection_select :origin_id, airports, :id, :code %>
+</p>
+
+<p>Arrive at:
+  <%= f.collection_select :destination_id, airports, :id, :code %>
+</p>
+
+
 <div class="actions">
     <%= f.submit %>
   </div>
