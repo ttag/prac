@@ -15,7 +15,12 @@
     <%= f.label :number %><br />
     <%= f.text_field :number %>
   </div>
-  <div class="actions">
+  <div class="field">
+    <%= f.label "Meal Service" %><br />
+    <%= f.check_box :meal %>
+  </div>
+
+<div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
