@@ -1,4 +1,6 @@
 Prac::Application.routes.draw do
+  resources :airports
+
   resources :flights
 
   # The priority is based upon order of creation:

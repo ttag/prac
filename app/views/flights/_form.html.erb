@@ -20,6 +20,19 @@
     <%= f.check_box :meal %>
   </div>
 
+
+<p>
+  <p>
+    <%= f.radio_button :equipment, '747' %><b>Boeing 777 (Jet, Nice)</b>
+  </p>
+  <p>
+    <%= f.radio_button :equipment, 'MD80' %><b>MD-80 (Jet, Old)</b>
+  </p>
+  <p>
+    <%= f.radio_button :equipment, 'Cessna' %><b>Cessna (Propeller)</b>
+  </p>
+
+
 <div class="actions">
     <%= f.submit %>
   </div>
